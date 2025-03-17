@@ -1,8 +1,60 @@
-# Getting Started with Create React App
+# Solitaire Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+This project is a digital adaptation of the classic solitaire card game built using modern web technologies on klondikle game rules. It features an interactive user interface, leveraging tailwind CSS for styling, JavaScript for interactivity, React JS for component-based UI development.This project is built using basic Data structures for its implementation. 
 
-## Available Scripts
+## Features
+
+- **Data Structure**: LinkedList,stack,queue,array implementation.
+- **Scoreboard**: Tracks and displays the player's score and time.
+- **Validation and Testing**: Valid moves, Card flipping and wincondition testing
+
+## Preview Link
+
+## Game Rules
+
+Klondike Solitaire is played with a single deck of 52 cards. The goal is to move all the cards to the foundation piles in ascending order, separated by suit. Here’s how to set up and play:
+
+### Setup
+1. **Tableau (Main Area)**: The tableau consists of seven columns.
+   - The first column contains 1 card, the second column has 2 cards, the third has 3, and so on until the seventh column, which has 7 cards.
+   - Only the top card in each column is face-up; all others are face-down.
+2. **Foundation**: There are four foundation piles, one for each suit (Hearts, Diamonds, Clubs, Spades). These piles start empty and will be built from Ace to King.
+3. **Stockpile**: The remaining 24 cards are placed in a stockpile, which you can draw from during the game.
+
+### Game Objective
+The objective of Klondike Solitaire is to move all cards to the foundation piles in ascending order (Ace to King) and by suit.
+
+### Gameplay Rules
+1. **Moving Cards in the Tableau**:
+   - You can move a face-up card (or a sequence of cards) in descending order and in alternating colors (e.g., a black 6 can be placed on a red 7).
+   - Only Kings or sequences beginning with a King can be placed in empty tableau columns.
+   - You may turn over a face-down card if it’s the top card in a tableau column.
+
+2. **Using the Stockpile**:
+   - You may draw one card at a time from the stockpile and play it to either the tableau or foundation, or discard it.
+   - If you’ve cycled through the stockpile, you can reshuffle and start again depending on game settings (some versions limit the number of cycles).
+
+3. **Building Foundations**:
+   - Cards must be moved to the foundation in ascending order by suit, starting with the Ace and ending with the King.
+   - Once a card is in a foundation pile, it can’t be removed.
+
+### Winning the Game
+You win if you successfully move all cards to the foundation piles in the correct order.
+
+## Strategies
+1. **Expose Hidden Cards**: Prioritize moves that reveal hidden cards in the tableau to increase available moves.
+2. **Empty Columns for Kings**: Clear tableau columns when possible to create space for a King, which can start a new sequence.
+3. **Be Strategic with the Stockpile**: Only draw from the stockpile when no moves are available in the tableau, as cycling through the stockpile can limit options.
+4. **Focus on Building Foundations**: Move cards to the foundations when it doesn't disrupt your ability to make other necessary moves in the tableau.
+## Screenshots
+
+### Game Mode
+Game Menu![Main Menu Screenshot](IMG-1.png) 
+Game Menu MidWay![Mid Way Game Menu Screenshot](IMG-2.png)
+Win Page![Win Game Menu Screenshot](IMG-3.png)
+
+## How to run the game
 
 In the project directory, you can run:
 
@@ -30,41 +82,6 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Dependencies
+Following dependencies are required to run the game:
+- Node JS
